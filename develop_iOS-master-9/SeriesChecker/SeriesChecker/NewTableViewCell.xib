@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="240" id="KGk-i7-Jjw" customClass="NewTableViewCell" customModule="SeriesChecker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="700" height="239"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rtg-gz-PIC">
+                        <rect key="frame" x="8" y="8" width="133" height="224"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Serie de matança!" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGX-0x-eqr">
+                        <rect key="frame" x="149" y="80" width="538" height="152"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="543" id="2v8-Dd-mem"/>
+                            <constraint firstAttribute="height" constant="152" id="R2F-uX-vqw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game of Thrones" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wv-7s-jX9">
+                        <rect key="frame" x="149" y="8" width="347" height="63"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/ 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbJ-vO-A9H">
+                        <rect key="frame" x="653" y="8" width="34" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Generos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLG-iA-quF">
+                        <rect key="frame" x="475" y="29" width="217" height="42"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nota" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKm-2T-NTm">
+                        <rect key="frame" x="504" y="8" width="141" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rtg-gz-PIC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="1hG-xL-tvG"/>
+                    <constraint firstItem="9Wv-7s-jX9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="4Id-t0-8dR"/>
+                    <constraint firstItem="aGX-0x-eqr" firstAttribute="top" secondItem="9Wv-7s-jX9" secondAttribute="bottom" constant="8" symbolic="YES" id="CdV-qU-aFG"/>
+                    <constraint firstItem="rtg-gz-PIC" firstAttribute="bottom" secondItem="aGX-0x-eqr" secondAttribute="bottom" id="Frz-Ug-6zw"/>
+                    <constraint firstItem="aGX-0x-eqr" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="LOJ-Ec-nZz"/>
+                    <constraint firstItem="rtg-gz-PIC" firstAttribute="top" secondItem="9Wv-7s-jX9" secondAttribute="top" id="SV6-ja-QDM"/>
+                    <constraint firstItem="aGX-0x-eqr" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="jox-hb-D1n"/>
+                    <constraint firstItem="aGX-0x-eqr" firstAttribute="leading" secondItem="rtg-gz-PIC" secondAttribute="trailing" constant="8" symbolic="YES" id="kuQ-Sj-ScE"/>
+                    <constraint firstItem="9Wv-7s-jX9" firstAttribute="trailing" secondItem="aGX-0x-eqr" secondAttribute="trailing" id="uOb-Em-2iD"/>
+                    <constraint firstItem="9Wv-7s-jX9" firstAttribute="leading" secondItem="rtg-gz-PIC" secondAttribute="trailing" constant="8" symbolic="YES" id="xmg-66-fVu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="genreView" destination="DLG-iA-quF" id="5G3-HQ-pTQ"/>
+                <outlet property="gradeView" destination="HKm-2T-NTm" id="WYQ-eb-wYL"/>
+                <outlet property="imgView" destination="rtg-gz-PIC" id="r1P-yA-DcZ"/>
+                <outlet property="sinopseView" destination="aGX-0x-eqr" id="4MC-5W-olq"/>
+                <outlet property="titleView" destination="9Wv-7s-jX9" id="hyu-7G-z46"/>
+            </connections>
+            <point key="canvasLocation" x="224" y="104"/>
+        </tableViewCell>
+    </objects>
+</document>
